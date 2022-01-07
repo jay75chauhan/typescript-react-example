@@ -1,13 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+
+import { TextField } from "./TextField";
 
 // props
 // hooks
 // render props
 
 const App: React.FC = () => {
-  return <div></div>;
+  return (
+    <div>
+      <TextField text="hello" person={{ firstName: "", lastName: "jay" }} />
+    </div>
+  );
 };
 
 export default App;
